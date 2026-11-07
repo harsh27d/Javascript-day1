@@ -15,8 +15,7 @@
         const messageElement = document.querySelector('.js-message');
         messageElement.innerHTML = 'Added';
 
-        // First, cancel the previous timeout so that
-        // it doesn't remove the message too quickly.
+      
         clearTimeout(timeoutId);
 
         timeoutId = setTimeout(function() {

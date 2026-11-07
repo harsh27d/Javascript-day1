@@ -4,11 +4,6 @@
     <title>App</title>
   </head>
   <body>
-    <!--
-      Note: This is just a sample solution. Other
-      solutions are possible so don't worry if
-      your solution looks different.
-    -->
     <button onclick="
       messages++;
       displayNotification();
@@ -17,13 +12,10 @@
     <button onclick="
       if (messages > 0) {
         messages--;
-
-        // If there are no new messages, stop displaying
-        // the notification in the tab.
         if (messages === 0) {
           stopNotification();
         }
-      }
+    }
     ">Remove</button>
 
     <script>
@@ -39,6 +31,8 @@
         if (isDisplayingNotification) {
           return;
         }
+      
+   
 
         isDisplayingNotification = true;
 
